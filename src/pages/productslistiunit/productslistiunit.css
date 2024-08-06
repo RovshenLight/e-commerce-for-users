@@ -1,0 +1,108 @@
+.prolistunit {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 20px;
+}
+
+.prolistunit .img {
+  width: 100%;
+  height: auto;
+}
+
+.prolistunit img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.prolistunit .cont h1 {
+  font-size: 3rem;
+}
+
+.prolistunit .cont p {
+  margin-top: 1rem;
+  line-height: 140%;
+  word-spacing: 2px;
+  font-size: 1.1rem;
+}
+
+.prolistunit .cont>span {
+  margin-top: 1rem;
+  font-size: 4rem;
+}
+
+.pro_unit_select {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30%;
+}
+
+.pro_unit_colors {
+  display: inline-flex;
+  justify-content: space-between;
+  font-size: 1.6rem;
+}
+
+.pro_unit_colors select {
+  margin-left: 0.5rem;
+  padding: 1px;
+  font-size: 1.3rem;
+}
+
+.pro_unit_counts {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pro_unit_bag {
+  font-size: 2rem;
+}
+
+.pro_unit_bag span {
+  border: 1px solid black;
+  font-size: 1.5rem;
+  padding: 0 10px;
+  margin: 0 1rem;
+  border-radius: 10%;
+}
+
+.pro_unit_select button {
+  display: inline-block;
+  border: 1px solid black;
+  outline: none;
+  box-sizing: border-box;
+  padding: 0.5rem 1rem;
+  font-size: 1.2rem;
+  border-radius: 2px;
+  margin-top: 1rem;
+  background: white;
+  cursor: pointer;
+  transition: all .3s;
+  font-weight: 500;
+}
+
+.pro_unit_select button:hover {
+  background: linear-gradient(300deg, lightblue,violet, lightcyan);
+  background-size: 180% 180%;
+  animation: gradient-animation 10s ease infinite;
+}
+
+@media screen and (max-width:1030px) {
+  .prolistunit {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width:760px) {
+  .pro_unit_select {
+    width: 49%;
+  }
+}
+@media screen and (max-width:500px) {
+  .pro_unit_select {
+    width: 75%;
+  }
+}

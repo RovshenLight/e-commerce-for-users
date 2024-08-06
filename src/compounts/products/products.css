@@ -1,0 +1,85 @@
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 0 20px;
+  margin-top: 2rem;
+}
+
+.productsunit {
+  width: 350px;
+  height: 350px;
+  border-radius: 2px;
+  position: relative;
+  cursor: grab;
+  background-color: lightcyan;
+}
+
+.bg {
+  background: linear-gradient(300deg, lightblue,violet, lightcyan);
+  background-size: 180% 180%;
+  animation: gradient-animation 10s ease infinite;
+  width: 60%;
+  height: 60%;
+  position: absolute;
+  top: 20%;
+  left: 20%;
+  z-index: 10;
+  border-radius: 50%;
+}
+
+.productsunit img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 20;
+  position: relative;
+}
+
+.pro_icons {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 2px;
+  margin: 0 auto;
+  transition: all 0.4s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  background-color: rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  z-index: 30;
+}
+
+.pro_icons a {
+  display: inline-flex;
+  cursor: pointer;
+  transition: opacity 0.4s, transform 0.4s;
+}
+
+.pro_icons svg {
+  background: white;
+  border-radius: 50%;
+  padding: 1rem;
+  border: 1px solid grey;
+}
+
+.pro_icons svg:hover {
+  background: linear-gradient(300deg, lightblue,violet, lightcyan);
+  background-size: 180% 180%;
+  animation: gradient-animation 10s ease infinite;
+}
+
+.productsunit:hover .pro_icons {
+  opacity: 1;
+}
+
+.pro_icons a:hover {
+  opacity: 1;
+  transform: scale(1.1);
+}
