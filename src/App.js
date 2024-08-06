@@ -4,7 +4,7 @@ import Productslistiunit from './pages/productslistiunit/Productslistiunit';
 import Basket from './pages/basket/Basket'
 import Regist from './pages/regist/Regist'
 import Login from './pages/login/Login'
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom/cjs/react-router-dom.min';
+import { HashRouter as Router, Route, Switch } from 'react-router-dom/cjs/react-router-dom.min';
 
 function App() {
   return (
