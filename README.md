@@ -1,5 +1,6 @@
-( https://rovshenlight.github.io/e-commerce-for-users/ ) <- For Users
+( https://rovshenlight.github.io/e-commerce-for-users/ ) <- For Users <br />
 
+( https://github.com/RovshenLight/e-commerce-for-developer ) <- For Developer.
 # 💫 About Me:
 I'm Frontend Developer
 
